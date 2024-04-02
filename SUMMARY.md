@@ -2,6 +2,8 @@
 
 * [General](README.md)
   * [Wording](general/wording.md)
+  * [Hardware](readme/hardware/README.md)
+    * [Teltonika TRB142](readme/hardware/teltonika-trb142.md)
 * [Configuration](configuration/README.md)
   * [Operating Modes](configuration/operating-modes/README.md)
     * [Pass Through](configuration/operating-modes/pass-through.md)
