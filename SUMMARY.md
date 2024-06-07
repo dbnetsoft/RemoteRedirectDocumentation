@@ -1,6 +1,7 @@
 # Table of contents
 
 * [General](README.md)
+  * [Release Notes](readme/release-notes.md)
   * [Wording](general/wording.md)
   * [Hardware](readme/hardware/README.md)
     * [Teltonika TRB142/RUT956](readme/hardware/teltonika-trb142-rut956.md)
