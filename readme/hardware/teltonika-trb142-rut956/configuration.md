@@ -1,4 +1,4 @@
-# Teltonika TRB142/RUT956
+# Configuration
 
 You usually find the settings for the serial port under _Services_ - _Serial Utilities_ - _Over IP._&#x20;
 
@@ -25,18 +25,6 @@ Under _General Tab_ set the following:
 
 Under _Advanced Tab_ set the following:
 
-|                     |       |
-| ------------------- | ----- |
-| Raw Mode            | on    |
-| No leading zeros    | off   |
-| Reconnect interval  | 30    |
-| Inactivity timeout  | 0     |
-| Serial timeout      | empty |
-| TCP Echo            | off   |
-| Close connections   | off   |
-| Connect on data     | off   |
-| Keep alive time     | 0     |
-| Keep alive interval | 0     |
-| Keep alive probes   | 0     |
+<table><thead><tr><th width="454"></th><th></th></tr></thead><tbody><tr><td>Raw Mode</td><td>on</td></tr><tr><td>No leading zeros</td><td>off</td></tr><tr><td>Reconnect interval</td><td>30</td></tr><tr><td>Inactivity timeout</td><td>0</td></tr><tr><td>Serial timeout</td><td>empty</td></tr><tr><td>TCP Echo</td><td>off</td></tr><tr><td>Close connections</td><td>off</td></tr><tr><td>Connect on data</td><td>off</td></tr><tr><td>Keep alive time</td><td>0</td></tr><tr><td>Keep alive interval</td><td>0</td></tr><tr><td>Keep alive probes</td><td>0</td></tr></tbody></table>
 
-More information on Teltonika TRB142 can be found [here](teltonika-trb142.md).
+More information on Teltonika TRB142 can be found [here](../teltonika-trb142.md).
