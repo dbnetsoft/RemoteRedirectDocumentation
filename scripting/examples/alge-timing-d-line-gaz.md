@@ -39,7 +39,7 @@ This script will show a countdown when reference is set and in the future. If re
         time = Clock
     else if Runtime && Runtime.TotalSeconds > 0
         # After Start
-        time = ToTimeSpan 0
+        time = Runtime
     else
         # Before Start
         time = Countdown

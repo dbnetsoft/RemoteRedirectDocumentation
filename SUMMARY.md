@@ -22,6 +22,7 @@
   * [Examples](scripting/examples/README.md)
     * [ALGE-Timing D-Line/GAZ](scripting/examples/alge-timing-d-line-gaz.md)
     * [FDS MLED](scripting/examples/fds-mled.md)
+    * [Microgate Microtab](scripting/examples/microgate-microtab.md)
 * [App](app/README.md)
   * [Prerequisites](app/prerequisites.md)
   * [Installation](app/installation.md)
