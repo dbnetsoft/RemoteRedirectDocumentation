@@ -16,12 +16,13 @@ This script display the current time of day:
 
 ```
 {{
-    time = Clock
-    timestring = time | FormatRaceResult "HH:mm:ss"
-    timestring= timestring | TrimPad 8 "Center"
+    time = Model.Clock
+    formatString = time.TimeOfDay.Seconds % 2 == 0 ? "HH:mm" : "HH mm"
+    timestring = time | FormatRaceResult formatString
+    timestring = timestring | TrimPad 8 "Center"
     color = "Blue"
 
-    line= (mled.Color color) + timestring
+    line = (mled.Color color) + timestring
     mled.CreateProtocol line 1 "Bright"
 }}
 ```
@@ -36,24 +37,24 @@ This script will display different information depending on the reference time:
 
 ```liquid
 {{
-    if ReferenceTime == null
+    if Model.ReferenceTime == null
         # No reference time set
-        time = Clock
-        timestring = time | FormatRaceResult "HH:mm:ss"
+        time = Model.Clock
+        timestring = time | FormatRaceResult "HH:Mm:ss"
         color = "Blue"
-    else if Runtime && Runtime.TotalSeconds > 0
+    else if Model.Runtime && Model.Runtime.TotalSeconds > 0
         # After Start
-        time = Runtime
-        timestring = time | FormatRaceResult "HH:mm:ss"
+        time = Model.Runtime
+        timestring = time | FormatRaceResult "HH:Mm:ss"
         color = "White"
     else
         # Before Start
-        time = Countdown
-        timestring = time | FormatRaceResult "HH:mm:ss"
+        time = Model.Countdown
+        timestring = time | FormatRaceResult "HH:Mm:ss"
         color = "Purple"
     end
-    timestring= timestring | TrimPad 8 "Right"
-    timestring= (mled.Color color) + (timestring| TrimPad 8 "Center")
+    timestring = timestring | TrimPad 8 "Right"
+    timestring = (mled.Color color) + (timestring| TrimPad 8 "Center")
     mled.CreateProtocol timestring 1 "Dark"
 }}
 ```

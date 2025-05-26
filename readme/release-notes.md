@@ -1,5 +1,10 @@
 # Release Notes
 
+## 2025-05-22
+
+* Scripts can be saved and processed instantly by hitting Ctrl + S without reloading website
+* Scripts have been re-implemented, variables like Clock and Runtime can be accessed via the `Model` object. E.g. instead of `Runtime` use `Model.Runtime`. The old syntax is still supported.&#x20;
+
 ## 2024-06-17
 
 * Reduced padding on form elements to allow more space to be visible

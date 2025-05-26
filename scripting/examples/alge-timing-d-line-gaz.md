@@ -34,15 +34,15 @@ This script will show a countdown when reference is set and in the future. If re
     bib = "";
     rank = "";
 
-    if ReferenceTime == null
+    if Model.ReferenceTime == null
         # No reference time set
-        time = Clock
-    else if Runtime && Runtime.TotalSeconds > 0
+        time = ToTimeSpan 0
+    else if Model.Countdown && Model.Countdown.TotalSeconds > 0
         # After Start
-        time = Runtime
+        time = Model.Countdown
     else
         # Before Start
-        time = Countdown
+        time = ToTimeSpan 0
     end
     timeString = gaz.Format(time, 0, true)
    
@@ -60,12 +60,12 @@ This script will show a running time when reference is set and is in the past. I
     bib = "";
     rank = "";
 
-    if ReferenceTime == null
+    if Model.ReferenceTime == null
         # No reference time set
         time = ToTimeSpan 0
-    else if Runtime && Runtime.TotalSeconds > 0
+    else if Model.Runtime && Model.Runtime.TotalSeconds > 0
         # After Start
-        time = Runtime
+        time = Model.Runtime
     else
         # Before Start
         time = ToTimeSpan 0
@@ -90,15 +90,15 @@ This script will display different information depending on the reference time:
     bib = "";
     rank = "";
 
-    if ReferenceTime == null
+    if Model.ReferenceTime == null
         # No reference time set
-        time = Clock
-    else if Runtime && Runtime.TotalSeconds > 0
+        time = Model.Clock
+    else if Model.Runtime && Model.Runtime.TotalSeconds > 0
         # After Start
-        time = Runtime
+        time = Model.Runtime
     else
         # Before Start
-        time = Countdown
+        time = Model.Countdown
     end
     timeString = gaz.Format(time, 0, true)
    
