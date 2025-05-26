@@ -27,7 +27,7 @@ This script display the current time of day:
     columnIndex = 0     # 0 is first column, 1 is second column, ...
     columns = 10        # total amount of columns depending on the font setup
     
-    text = Link.Clock | Format "HH:mm:ss"
+    text = Model.Clock | Format "HH:mm:ss"
     text = text | TrimPad columns "Center"
 
     microtab.CreateAlphaStringProtocol(rowAddress, columnIndex, text)
@@ -44,15 +44,15 @@ This script will show a countdown when reference is set and in the future. If re
     columnIndex = 0     # 0 is first column, 1 is second column, ...
     columns = 10        # total amount of columns depending on the font setup
 
-    if Link.ReferenceTime == null
+    if Model.ReferenceTime == null
         # No reference time set
-        text = Link.Clock  | Format "HH:mm:ss"
-    else if Link.Runtime && Link.Runtime.TotalSeconds > 0
+        text = Model.Clock  | Format "HH:mm:ss"
+    else if Model.Runtime && Model.Runtime.TotalSeconds > 0
         # After Start
         text = ToTimeSpan 0  | Format "HH:mm:ss"
     else
         # Before Start
-        text = Link.Countdown  | Format "HH:mm:ss"
+        text = Model.Countdown  | Format "HH:mm:ss"
     end
  
     text = text | TrimPad columns "Center"  
@@ -71,15 +71,15 @@ This script will show a running time when reference is set and is in the past. I
     columnIndex = 0     # 0 is first column, 1 is second column, ...
     columns = 10        # total amount of columns depending on the font setup
 
-    if Link.ReferenceTime == null
+    if Model.ReferenceTime == null
         # No reference time set
         text = ""
-    else if Link.Runtime && Link.Runtime.TotalSeconds > 0
+    else if Model.Runtime && Model.Runtime.TotalSeconds > 0
         # After Start
         text = ToTimeSpan 0  | Format "HH:mm:ss"
     else
         # Before Start
-        text = Link.Countdown  | Format "HH:mm:ss"
+        text = Model.Countdown  | Format "HH:mm:ss"
     end
  
     text = text | TrimPad columns "Center"  
@@ -102,15 +102,15 @@ This script will display different information depending on the reference time:
     columnIndex = 0     # 0 is first column, 1 is second column, ...
     columns = 10        # total amount of columns depending on the font setup
 
-    if Link.ReferenceTime == null
+    if Model.ReferenceTime == null
         # No reference time set
-        time = Link.Clock
-    else if Runtime && Runtime.TotalSeconds > 0
+        time = Model.Clock
+    else if Model.Runtime && Model.Runtime.TotalSeconds > 0
         # After Start
-        time = Link.Runtime
+        time = Model.Runtime
     else
         # Before Start
-        time = Link.Countdown
+        time = Model.Countdown
     end
     time = time | Format "HH:mm:ss"
     text = time | TrimPad columns "Center"  
