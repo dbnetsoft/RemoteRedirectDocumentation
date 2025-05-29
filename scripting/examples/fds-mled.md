@@ -63,8 +63,6 @@ This script will display different information depending on the reference time:
 
 This script will display two lines of maximum 16 charaters.
 
-
-
 ```liquid
 {{ 
     line1 = "Herzlich"
@@ -75,5 +73,56 @@ This script will display two lines of maximum 16 charaters.
     
     mled.CreateProtocol line1 2 "Bright"
     mled.CreateProtocol line2 3 "Bright"
+}}
+```
+
+## Show running time for two competitions simultenously
+
+This is useful for showing running times for two competitions on two lines (e.g. different starting blocks or men and women starting time delayed). The text to display and the starttime can be entered at the end of the script and are not taken from the link or scene's reference time.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt="" width="300"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+FDS MLED line nr 1 equals to one row with 8 characters, line nr 2 and 3 are the top and bottom row with two rows each 16 characters wide.&#x20;
+{% endhint %}
+
+```
+{{
+
+    # Defines a function to show a text and a running time on a specific line nr
+    func showLine(text, starttime, lineNr) 
+   
+         # Trim and align the text left by 8 characters
+        text = text | string.TrimPad 8 "Left"
+        
+        # Transform starttime into usble timespan
+        starttime = starttime | timespan.ParseTimeOfDay
+        
+        # Calculate the difftime to the current time in seconds
+        diff = Clock.TimeOfDay.TotalSeconds - starttime.TotalSeconds
+        
+        # Decide what to do before starttime or after
+        if (diff >= 0)
+            diff = FormatRaceResult diff "HH:Mm:ss"
+        else 
+            diff = "-"
+        end
+        
+          # Trim and align the time right by 8 characters
+        diff = diff | string.TrimPad 8 "Right"
+        
+    
+        # Construct the line to display
+        line = (mled.Color "Red") + text + (mled.Color "White") + diff
+      
+        # Construct the FDS MLED specific string and return it
+        mled.CreateProtocol line lineNr
+   
+    end 
+
+    # Call the defined function with the repsective parameters
+    showLine("M Bl. A", "14:45:22,2", 2)
+    showLine("M Bl. B", "14:50:25,1", 3)
+
 }}
 ```
