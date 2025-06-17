@@ -10,7 +10,7 @@ This script displays just blank digits:
 }}
 ```
 
-## Display Clock
+## Display Clock (w/ seconds)
 
 This script display the current time of day:
 
@@ -21,6 +21,25 @@ This script display the current time of day:
     rank = "";
     clockString = gaz.Format(Clock, 0, true)
     gaz.CreateProtocol(address, bib, rank, clockString);
+}}
+```
+
+## Display Clock (w/ blinking separator)
+
+```
+{{
+    address = "";
+    bib = "";
+    rank = "";
+    
+    time = Model.Clock
+    formatString = time.TimeOfDay.Seconds % 2 == 0 ? "HH:mm" : "HH mm"
+    timeString = Clock | Format formatString 
+    
+    # Append blanks for .ss.fff
+    timeString = timeString + "       "
+    
+    gaz.CreateProtocol(address, bib, rank, timeString);
 }}
 ```
 
