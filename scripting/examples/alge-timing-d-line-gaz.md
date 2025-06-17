@@ -124,3 +124,36 @@ This script will display different information depending on the reference time:
     gaz.CreateProtocol(address, bib, rank, timeString);
 }}
 ```
+
+## Display Clock, Countdown or Runtime (with different formatting options)
+
+```
+{{ 
+    address = "";
+    bib = "";
+    rank = "";
+
+    if Model.ReferenceTime == null
+        # No reference time set
+        formatString = Model.Clock.TimeOfDay.Seconds % 2 == 0 ? "HH:mm" : "HH mm"
+        timeString = Model.Clock | Format formatString
+        timeString = timeString | TrimPad 8 "Right"
+        timeString = timeString | TrimPad 12 "Left"
+    else if Model.Runtime && Model.Runtime.TotalSeconds > 0
+        # After Start
+        timeString = Model.Runtime | Format  "hh:mM:SS.f"
+ timeString = timeString | TrimPad 10 "Right"
+        timeString = timeString | TrimPad 12 "Left"
+    else
+        # Before Start
+        timeString = Model.Countdown | Format "hh:mM:SS"
+        timeString = timeString | TrimPad 8 "Right"
+        timeString = timeString | TrimPad 12 "Left"
+    end
+    
+    
+    #timeString = gaz.Format(time, 0, true)
+   timeString
+    #gaz.CreateProtocol(address, bib, rank, timeString);
+}}
+```
