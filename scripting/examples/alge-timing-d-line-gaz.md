@@ -150,10 +150,7 @@ This script will display different information depending on the reference time:
         timeString = timeString | TrimPad 8 "Right"
         timeString = timeString | TrimPad 12 "Left"
     end
-    
-    
-    #timeString = gaz.Format(time, 0, true)
-   timeString
-    #gaz.CreateProtocol(address, bib, rank, timeString);
+
+    gaz.CreateProtocol(address, bib, rank, timeString);
 }}
 ```
