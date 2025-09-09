@@ -14,9 +14,8 @@ This script will format the current reference time (start time) and output it as
 {
     "clock": "{{ Model.UtcClock | object.format "O" }}",
     "starttime": {{ Model.IsRuntime ? "\"" + (Model.ReferenceTime | object.format "O") + "\"" : "null"  }},
-    "runtime": {{ Model.IsRuntime ?  Model.Runtime : "null" }},
-    "isStarted": {{ Model.IsRuntime ? "true":"false" }}
-    
+    "runtime": {{ Model.IsRuntime ?  "\"" + Model.Runtime + "\"" : "null" }},
+    "isStarted": {{ Model.IsRuntime ? "true":"false" }}  
 }
 ```
 
