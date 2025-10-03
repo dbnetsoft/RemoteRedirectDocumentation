@@ -1,12 +1,12 @@
 # Prerequisites
 
-## Android System
+## Android&#x20;
 
 Android must be at least version 6 (Marshmallow) or higher.&#x20;
 
-As the app is not available yte in the Google Play Store, but only hosted on our website, the system must allow installation form unknown locations. Go to _Settings_ - _Apps_ - _Special app access_ - _Install unknown apps_ and enable _Allow from this source_ for C&#x68;_&#x72;_&#x6F;me.
+You can download the app from here:&#x20;
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt="" width="216"><figcaption></figcaption></figure>
+[https://play.google.com/store/apps/details?id=com.dbnetsoft.RemoteRedirect](https://play.google.com/store/apps/details?id=com.dbnetsoft.RemoteRedirect)
 
 ## USB-RS232-Adapter
 

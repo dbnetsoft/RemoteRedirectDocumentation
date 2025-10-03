@@ -2,9 +2,9 @@
 
 ## Download
 
-The downloaded APK package can be installed when all the requirements are met:
+Download and install the app from the Google Play Store:&#x20;
 
-{% embed url="https://downloads.dbnetsoft.com/remoteredirect/com.dbnetsoft.RemoteRedirect.apk" %}
+[https://play.google.com/store/apps/details?id=com.dbnetsoft.RemoteRedirect](https://play.google.com/store/apps/details?id=com.dbnetsoft.RemoteRedirect)
 
 ## Setup RemoteRedirect
 
