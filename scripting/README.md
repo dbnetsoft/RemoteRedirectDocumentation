@@ -2,7 +2,9 @@
 description: This page describes the syntax and possibilities with scripting.
 ---
 
-# Scripting
+# Scene Scripts
+
+Each scene and link is executing scripts to decide what to show on displayboards.
 
 Scripting is based on the powerful [Scriban scripting language](https://github.com/scriban/scriban). You can find more information here:
 
