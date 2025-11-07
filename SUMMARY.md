@@ -14,7 +14,7 @@
         * [Android App](configuration/operating-modes/display/connectivity/android-app.md)
         * [Mobile RS232-Router](configuration/operating-modes/display/connectivity/mobile-rs232-router.md)
         * [REST API](configuration/operating-modes/display/connectivity/rest-api.md)
-      * [Scripting](configuration/operating-modes/display/scripting.md)
+      * [Link Scripting](configuration/operating-modes/display/link-scripting.md)
     * [Pass Through](configuration/operating-modes/pass-through.md)
     * [Timing](configuration/operating-modes/timing.md)
 * [Operation](operation/README.md)

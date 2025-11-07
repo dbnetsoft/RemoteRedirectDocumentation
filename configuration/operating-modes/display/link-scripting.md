@@ -1,4 +1,8 @@
-# Scripting
+---
+description: The link script defines what is sent out to the display board.
+---
+
+# Link Scripting
 
 ## ALGE-Timing D-Line Scripting
 
