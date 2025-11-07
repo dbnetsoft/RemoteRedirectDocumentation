@@ -6,11 +6,11 @@ A lot of basic functions are provided out-of-the-box by Scriban. You can find mo
 
 ### Standard Custom Functions <a href="#custom-functions" id="custom-functions"></a>
 
-In our [Knowledge Base](https://app.gitbook.com/s/C67Cb6MMW0kgkxqRVkiH/scripting/functions/custom-standard-functions) you'll find an overview over all standard custom functions implement not only in RemoteRedirector but also [RaceResultExchange](https://www.dbnetsoft.com/turnkeysoftware/raceresultexchange/).&#x20;
+In our [Knowledge Base](https://app.gitbook.com/s/C67Cb6MMW0kgkxqRVkiH/scripting/functions/custom-standard-functions) you'll find an overview over all standard custom functions implement not only in RemoteRedirect but also [RaceResultExchange](https://www.dbnetsoft.com/turnkeysoftware/raceresultexchange/).&#x20;
 
 ## Custom Functions
 
-RemoteRedirector provides other custom functions specific to display data.&#x20;
+RemoteRedirect provides other custom functions specific to display data.&#x20;
 
 
 

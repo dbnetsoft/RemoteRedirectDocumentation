@@ -16,12 +16,12 @@ There you need to define a configurationb as follows:&#x20;
 
 Under _General Tab_ set the following:
 
-|                     |                                                                                                                                                           |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Mode                | Client                                                                                                                                                    |
-| Protocol            | TCP                                                                                                                                                       |
-| Destination Address | www.remoteredirect.com                                                                                                                                    |
-| Destination Port    | <p>Depending on your link, use the port number from Output side<br><img src="../../../.gitbook/assets/image (1) (1).png" alt="" data-size="original"></p> |
+|                     |                                                                                                                                                               |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Mode                | Client                                                                                                                                                        |
+| Protocol            | TCP                                                                                                                                                           |
+| Destination Address | www.remoteredirect.com                                                                                                                                        |
+| Destination Port    | <p>Depending on your link, use the port number from Output side<br><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt="" data-size="original"></p> |
 
 Under _Advanced Tab_ set the following:
 

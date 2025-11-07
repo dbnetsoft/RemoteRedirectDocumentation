@@ -24,3 +24,5 @@ The app can be downloaded from the Google Play Store.
 {% embed url="https://play.google.com/store/apps/details?id=com.dbnetsoft.RemoteRedirect" %}
 Google Play Store Download
 {% endembed %}
+
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt="" width="375"><figcaption></figcaption></figure>

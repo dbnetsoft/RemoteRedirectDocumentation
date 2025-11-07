@@ -80,7 +80,7 @@ This script will display two lines of maximum 16 charaters.
 
 This is useful for showing running times for two competitions on two lines (e.g. different starting blocks or men and women starting time delayed). The text to display and the starttime can be entered at the end of the script and are not taken from the link or scene's reference time.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt="" width="300"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5).png" alt="" width="300"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 FDS MLED line nr 1 equals to one row with 8 characters, line nr 2 and 3 are the top and bottom row with two rows each 16 characters wide.&#x20;

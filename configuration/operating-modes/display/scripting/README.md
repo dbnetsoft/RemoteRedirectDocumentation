@@ -11,7 +11,7 @@ Scripting is based on the powerful [Scriban scripting language](https://github.c
 * Language Overview: [Here](https://github.com/scriban/scriban/blob/master/doc/language.md)
 * Built-in Functions: [Here](https://github.com/scriban/scriban/blob/master/doc/builtins.md)
 
-Different than stated in the scriban docs, Race Result Exchange is not changing the casing of variables or functions. Even more, you can use `string.ends_with`or `string.EndsWith`, whereas the later is preferred as it means the declaration of the method is not touched.
+Different than stated in the official scriban docs, Remote Redirect is not changing the casing of variables or functions. Even more, you can use `string.ends_with`or `string.EndsWith`, whereas the later is preferred as it means the declaration of the method is not touched.
 
 The following script will output "Hello World":
 
