@@ -20,8 +20,7 @@
 * More internal logging
 * Batch link operations
   * Multiple links can be started together
-  *   Multiple links can be changed mode together\
-
+  *   Multiple links can be changed mode together<br>
 
       <figure><img src="../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure>
 

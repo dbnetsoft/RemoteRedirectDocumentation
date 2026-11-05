@@ -13,7 +13,6 @@
     * [Display](configuration/operating-modes/display/README.md)
       * [Connectivity](configuration/operating-modes/display/connectivity/README.md)
         * [Android App](configuration/operating-modes/display/connectivity/android-app.md)
-        * [Bluetooth Adapters](configuration/operating-modes/display/connectivity/bluetooth-adapters.md)
         * [Mobile RS232-Router](configuration/operating-modes/display/connectivity/mobile-rs232-router.md)
         * [REST API](configuration/operating-modes/display/connectivity/rest-api.md)
       * [Live](configuration/operating-modes/display/live.md)
@@ -35,3 +34,4 @@
   * [Usage](app/usage/README.md)
     * [Home](app/usage/home.md)
     * [Display](app/usage/display.md)
+  * [Bluetooth Adapters](app/bluetooth-adapters.md)
