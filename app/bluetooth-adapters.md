@@ -7,7 +7,7 @@
 The RemoteRedirect app on iPhone, iPad and Android can drive your display board through a Bluetooth Low Energy (BLE) RS232 adapter. The adapter plugs into the display board, and no cable to the phone is needed.
 
 {% hint style="info" %}
-Bluetooth adapters are supported from the next app release after version 1.8.
+Bluetooth adapters are supported from app version 1.9.
 {% endhint %}
 
 ## Supported Adapters
