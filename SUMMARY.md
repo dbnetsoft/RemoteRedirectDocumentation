@@ -35,3 +35,4 @@
     * [Home](app/usage/home.md)
     * [Display](app/usage/display.md)
   * [Bluetooth Adapters](app/bluetooth-adapters.md)
+* [RemoteRedirect Local](remoteredirect-local.md)
