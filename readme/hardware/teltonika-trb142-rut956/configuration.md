@@ -1,8 +1,8 @@
 # Configuration
 
-You usually find the settings for the serial port under _Services_ - _Serial Utilities_ - _Over IP._&#x20;
+You usually find the settings for the serial port under _Services_ - _Serial Utilities_ - _Over IP._
 
-There you need to define a configurationb as follows:&#x20;
+There you need to define a configurationb as follows:
 
 | Parameter    | Value                                                                       |
 | ------------ | --------------------------------------------------------------------------- |
@@ -20,7 +20,7 @@ Under _General Tab_ set the following:
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Mode                | Client                                                                                                                                                        |
 | Protocol            | TCP                                                                                                                                                           |
-| Destination Address | www.remoteredirect.com                                                                                                                                        |
+| Destination Address | links.remoteredirect.com (not www.remoteredirect.com, which only passes web traffic)                                                                          |
 | Destination Port    | <p>Depending on your link, use the port number from Output side<br><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt="" data-size="original"></p> |
 
 Under _Advanced Tab_ set the following:
@@ -29,6 +29,6 @@ Under _Advanced Tab_ set the following:
 
 ## TRB142 Configuration Video
 
-A short video on how to configure the TeltonikaTRB 142 can be found on the [dbnetsoft YouTube channel](https://www.youtube.com/channel/UCXYI2v8j8v2SRsVumkpd_1Q):&#x20;
+A short video on how to configure the TeltonikaTRB 142 can be found on the [dbnetsoft YouTube channel](https://www.youtube.com/channel/UCXYI2v8j8v2SRsVumkpd_1Q):
 
 {% embed url="https://www.youtube.com/watch?t=51s&v=bvP9dw82ZvY" %}
